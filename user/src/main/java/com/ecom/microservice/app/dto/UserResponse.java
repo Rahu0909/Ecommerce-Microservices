@@ -1,0 +1,20 @@
+package com.ecom.microservice.app.dto;
+
+import com.ecom.microservice.app.model.UserRole;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class UserResponse {
+    private String keyCloakId;
+    private String id;
+    private String firstName;
+    private String lastName;
+    private String email;
+    private String phone;
+    private UserRole userRole;
+    private AddressDto address;
+}

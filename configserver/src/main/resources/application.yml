@@ -1,0 +1,58 @@
+  Lets start with Config-server
+    application.properties file
+  spring:
+    application:
+      name: configserver
+    profiles:
+      active: native
+    rabbitmq:
+      host: woodpecker.rmq.cloudamqp.com
+      port: 5672
+      username: kmjkqbni
+      password: NIltQobgxmGHzlayz4Dep5Xuxn_N19wA
+      connection-timeout: 30000
+      virtual-host: kmjkqbni
+    cloud:
+      config:
+        server:
+          native:
+            search-locations: file:///E:\Rahul Advance Learning\Idea Workspace\EcommereMicroservice-app\configserver\src\main\resources\config
+
+  server:
+    port: 8888
+
+  management:
+    endpoints:
+      web:
+        exposure:
+          include: "*"
+
+    application-docker file-
+  spring:
+    application:
+      name: configserver
+    profiles:
+      active: native
+    rabbitmq:
+      host: woodpecker.rmq.cloudamqp.com
+      port: 5672
+      username: kmjkqbni
+      password: NIltQobgxmGHzlayz4Dep5Xuxn_N19wA
+      connection-timeout: 30000
+      virtual-host: kmjkqbni
+    cloud:
+      config:
+        server:
+          native:
+            search-locations: file:/config
+
+  server:
+    port: 8888
+
+  management:
+    endpoints:
+      web:
+        exposure:
+          include: "*"
+
+    Now give me updated files, if needed and env file content
